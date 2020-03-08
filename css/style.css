@@ -1,0 +1,275 @@
+body{
+    margin: 0;
+    height: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.65;
+    
+}
+header{
+    
+    top:0;
+    background-color: rgb(116, 185, 255);
+    width: 100%;
+    
+}
+
+/*global*/
+a{
+    text-decoration: none;
+}
+
+/*logo*/
+.logo{
+    padding:14px 16px;
+    text-align:center;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    color:#fff;
+   
+    
+}
+.highlight{
+    display: inline-block;
+    padding:5px;margin-left:10px;
+    background-color:rgb(225, 112, 85);
+}
+/*menu*/
+.menu{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+    
+}
+.menu .list{
+    float: left;
+    display:inline-block;
+}
+.menu .list a{
+    padding:14px 16px;
+    text-align:center;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    color:#fff;
+
+}
+
+.header-display{
+    height: 450px;
+    margin:0;
+    width:100%;
+    background:linear-gradient(rgb(116, 185, 255),rgb(9, 132, 227));
+    padding-top:50px;
+}
+
+
+
+
+
+
+.header-display .holder{
+   margin: auto;
+   position: absolute;
+    left:30%;
+    top:20%;
+   
+    
+}
+
+.holder span{
+    font-family: ;
+    backface-visibility: hidden;
+    
+    font-family: ;
+    color:#fff;
+    
+    letter-spacing: 2px;
+    margin:auto;
+    display: block;
+
+}
+.holder span:nth-child(1){
+
+    font-size:50px;
+    font-weight: bold;
+    margin-bottom:20px;
+    animation-name: big;
+    animation-duration: 5s;
+    animation-timing-function:ease;
+    animation-direction: forwards;
+
+}
+
+.holder span:nth-child(2){
+
+    font-size:20px;
+    font-weight: bold;
+    animation-name:small;
+    animation-duration: 5s;
+    animation-direction: forwards;
+    margin-bottom: 20px;
+    animation-timing-function:ease;
+    
+
+}
+.holder span:nth-child(3){
+
+    font-size:20px;
+    font-weight: bold;
+    animation-name:small1;
+    animation-duration: 5s;
+    animation-direction: forwards;
+    margin-bottom: 20px;
+    animation-timing-function:ease;
+    
+
+}
+
+
+.button-hire{
+   
+    
+    
+
+    padding: 10px 30px;
+    margin-top: 10px;
+    background:linear-gradient(rgb(255, 118, 117),rgb(225, 112, 85));
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    
+    font-size: 22px;
+    animation-name: button;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-direction:forwards;
+   
+
+}
+
+.holder img{
+    height: 280px;
+    WIDTH: 280px;
+    
+    border-radius: 50%;
+    position: absolute;
+    float: right;
+    transform: translate(120%,-70%);
+    animation-name:img;
+    animation-duration: 7s;
+    animation-direction: forwards;
+    animation-timing-function: ease;
+}
+
+.main{
+    margin:0;
+    padding:0
+}
+.container{
+    width: 80%;
+    overflow: hidden;
+    margin:auto;
+}
+
+.all-contain{
+    margin: auto;
+}
+.posts{
+    margin: 0 ;
+    
+    padding:0px;
+
+}
+.post{
+    margin: 0 10px 10px 0;
+    width: 236px;
+    display: inline-block;
+    padding:10px;
+    box-shadow: 2px 2px 2px 2px rgba(0.2, 0.2, 0.2, 0.2);
+}
+.sticky_nav{
+    position:fixed;
+    background:#ff7675;
+    animation-name:nav_menu;
+    animation-duration: 1s;
+    animation-timing-function:ease;
+    /* /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
+}
+.sticky_nav_h{
+    
+    background:#2d3436;
+    
+}
+@keyframes nav_menu{
+    0%{transform: translateY(-10%);opacity: 0;}
+}
+.post .title{
+    font-size: 20px;
+    font-weight:bold;
+    display:block;
+}
+.posts .titre{
+    width: 50%;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 20px;;
+    text-align: center;
+    
+}
+.posts .titre a{
+    font-weight: bold;
+    font-size: 25px;;
+    
+}
+.post img{
+    height: 180px;
+    width: 80%;
+    margin:0;
+}
+footer{
+    background:linear-gradient(rgb(116, 185, 255),rgb(9, 132, 227));
+    padding:50px;
+    text-align: center;
+    margin-top:20px;
+}
+footer p{
+    margin:0;
+    font-weight: bold;
+    font-size: 20;
+    color:#fff;
+}
+@keyframes img{
+    0%{transform: translate(210%,-70%);opacity:0;}
+    95%{opacity:1;}
+}
+@keyframes small{
+    0%{transform:translateX(-30%);opacity: 0.7}
+    70%{transform:translateX(10%);opacity: 0.9}
+    100%{transform:translateX(0%);opacity: 1}
+}
+@keyframes small1{
+    0%{transform:translateX(30%);opacity: 0.7}
+    70%{transform:translateX(-10%);opacity: 0.9}
+    100%{transform:translateX(0%);opacity: 1}
+}
+
+@keyframes big{
+    from{transform:translateY(-150%);opacity: 0.7}
+    
+    to{transform:translateY(0%);opacity: 1}
+}
+
+@keyframes button{
+    
+    
+    0%{transform:translateY(-50%);opacity: 0}
+    70%{transform:translateY(20%);opacity: 0.9}
+    100%{transform:translateY(0%);opacity: 1}
+    
+}

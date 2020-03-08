@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+    <header class="header" id="header">
+        <a id="logo" class="logo" href> Romaric<span id="highlight"class="highlight">Aboule</span> </a>
+        <ul class="menu">
+            <li class="list"><a href="#">accueil</a></li>
+            <li class="list"><a href="#">moi</a></li>
+            <li class="list"><a href="#">projets</a></li>
+            <li class="list"><a href="#">tutoriels</a></li>
+        </ul>
+    </header>
+    <div class="header-display">
+       
+        <div class="holder">
+            <span>Salut </span>
+            <span>Je m'appel Romaric Aboule</span>
+            <span>Je suis developpeur Web</span>
+            <img src="r.png">
+           
+            <button class="button-hire">Me contacter</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="posts">
+            <div class="container" id="container">
+                <div class="titre"><a href="#">Les Dernier Post</a></div>  
+                <div class="all-contain">
+                    <div class="post">
+                        <img src="stalenko.jpg">
+                        <span class="title">Comment scrapper facebook</span>
+                        <span class="content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has ..</span>
+                        <span class="widget"></span>
+                        <div></div>
+                    </div>
+                    <div class="post">
+                        <img src="stalenko.jpg">
+                        <span class="title">Comment scrapper facebook</span>
+                        <span class="content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has ..</span>
+                        <span class="widget"></span>
+                        <div></div>
+                    </div>
+                    <div class="post">
+                        <img src="stalenko.jpg">
+                        <span class="title">Comment scrapper facebook</span>
+                        <span class="content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has ..</span>
+                        <span class="widget"></span>
+                        <div></div>
+                    </div>
+                     <div class="post">
+                        <img src="stalenko.jpg">
+                        <span class="title">Comment scrapper facebook</span>
+                        <span class="content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum </span>
+                        <span class="widget"></span>
+                        <div></div>
+                    </div>
+                    <div class="post">
+                        <img src="stalenko.jpg">
+                        <span class="title">Comment scrapper facebook</span>
+                        <span class="content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum </span>
+                        <span class="widget"></span>
+                        <div></div>
+                    </div>
+                    <div class="post">
+                        <img src="stalenko.jpg">
+                        <span class="title">Comment scrapper facebook</span>
+                        <span class="content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum </span>
+                        <span class="widget"></span>
+                        <div></div>
+                    </div>
+                    <div class="post">
+                        <img src="stalenko.jpg">
+                        <span class="title">Comment scrapper facebook</span>
+                        <span class="content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum </span>
+                        <span class="widget"></span>
+                        <div></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <footer><p>design by romaric aboule</p></footer>
+    <script>
+        var header = document.getElementById('header');
+        var highlight = document.getElementById('highlight');
+
+        function position(){
+
+            if(window.pageYOffset>=400){
+                header.classList.add('sticky_nav');
+                highlight.classList.add('sticky_nav_h');
+            }else{
+                header.classList.remove('sticky_nav');
+                highlight.classList.remove('sticky_nav_h');
+
+            }
+        }
+
+        window.onscroll=function(){
+            position();
+        }
+    </script>
+    </body>
+</html>
